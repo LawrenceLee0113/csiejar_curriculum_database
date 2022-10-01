@@ -2,15 +2,17 @@
     <head>
 
 <script>
-        
-        window.parent.postMessage({ h: document.body.scrollHeight}, '*')
-        console.log(document.body.scrollHeight)
+        window.onload=function(){
+               window.parent.postMessage({ h: document.body.scrollHeight}, '*')
+               console.log(document.body.scrollHeight)
+        }
+
 </script>
     <link rel="stylesheet" href="style.css">
 
     </head>
 <body>
-    <center><h1>這是課表內容555</h1></center>
+    <center><h1>這是課表內容665</h1></center>
     <div class='ScheduleOut'>
     <div class='schedule_tab'>
       <table id='schedule_tab' class='schedule_tab' cellpadding='0'>

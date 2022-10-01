@@ -1,5 +1,14 @@
-
-    <style>
+<html>
+    <head>
+        <script>
+        function resize() {
+        parent.document.getElementById("mainframe").height = document.body.scrollHeight; //將子頁面高度傳到父頁面框架
+    }
+    </script>
+    </head>
+    
+    <body onload="resize();">
+            <style>
         /* CSS Document */
 
         form .btn-xs {
@@ -1005,3 +1014,10 @@
 </div>
 </div>
    </div>
+        
+        
+    </body>
+    
+    
+</html>
+

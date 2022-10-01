@@ -1,15 +1,17 @@
 <html>
     <head>
-        <script>
-        function resize() {
-        parent.document.getElementById("myIframe").height = document.body.scrollHeight; //將子頁面高度傳到父頁面框架
-    }
-    </script>
+      <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script>
+    $(function(){
+        var _h = $(document).height();//取得網頁高度
+        parent.postMessage({ h: _h}, '*');//將高度值，傳到父層
+    });
+</script>
     <link rel="stylesheet" href="style.css">
 
     </head>
-<body onload="resize()">
-    <center><h1>這是課表內容333</h1></center>
+<body>
+    <center><h1>這是課表內容444</h1></center>
     <div class='ScheduleOut'>
     <div class='schedule_tab'>
       <table id='schedule_tab' class='schedule_tab' cellpadding='0'>
